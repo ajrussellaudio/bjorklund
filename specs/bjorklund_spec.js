@@ -36,10 +36,12 @@ describe('Bjorklund.distribute', function() {
 });
 
 describe("Bjorklund.rotate", function() {
+
   it("rotates an array by one", function() {
     var expected = [0,1,0,0];
     assert.deepEqual(Bjorklund.rotate([0,0,1,0]), expected);
   })
+
 });
 
 describe("Bjorklund.offset", function() {
@@ -53,4 +55,7 @@ describe("Bjorklund.offset", function() {
     assert(Bjorklund.offset([0, 0, 0]));
   });
 
-})
+});
+
+// TODO: Bjorklund.map(high, low)
+// TODO: Bjorklund.build(slots, pulses, high, low)
