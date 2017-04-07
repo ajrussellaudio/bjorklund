@@ -11,7 +11,6 @@ function bjorklund(slots, pulses) {
     remainders[level+1] = divisor % remainders[level];
     divisor = remainders[level];
     level++;
-    console.log("remainders:", remainders);
   };
 
   counts.push(divisor);
@@ -35,6 +34,8 @@ function bjorklund(slots, pulses) {
   }
 }
 };
+
+
 
 
 
