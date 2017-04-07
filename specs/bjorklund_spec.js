@@ -28,4 +28,8 @@ describe('Bjorklund', function() {
     assert.deepEqual(bjorklund(4, 20), expected);
   });
 
+  it("doesn't flip out when given 0 as input", function() {
+    assert.ok(bjorklund(7, 0));
+  })
+
 })
